@@ -1,0 +1,8 @@
+<h2>Read Article<h2>
+<%= @article.title %>
+<%= @article.content %>
+<%= link_to "Back to article", articles_path %>
+<%= link_to "Delete",
+ article_path(@article),
+  data: {turbo_method: :delete, turbo_confirm: "Are you sure?"}
+%>
