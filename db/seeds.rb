@@ -9,7 +9,6 @@
 #   end
 require 'faker'
  10.times do
-  10.times do
     Article.create !(
       title: Faker::Article.title,
       content: Faker::Lorem.paragraph(sentence_count: 5)
